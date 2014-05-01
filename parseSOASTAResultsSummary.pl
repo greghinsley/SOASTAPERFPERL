@@ -253,7 +253,7 @@ $guidFromTimestamp = substr($guidFromTimestamp, 0, 12);
 print "Guid from TimeStamp is $guidFromTimestamp\n";
 
 #$results =~ /errors=\"(\d+)\"/;
-#$results =~ /failures=\"(\d+)\"/;
+$results =~ /failures=\"(\d+)\"/;
 $compErrors=$1;
 print ("\tCaptured errors from filed. Errors was $compErrors\n");
 
