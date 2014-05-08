@@ -188,26 +188,27 @@ else
 ##
 ## Pull down the package for scommand and decompress tools
 ##
-print("Pulling down sCommand package from instance $soastaUrl\n") ;
+print("Commented: Pulling down sCommand package from instance $soastaUrl\n") ;
 
-my $ua = LWP::UserAgent->new ;
-$ua->mirror($soastaUrl . '/downloads/scommand/scommand.zip', 'scommand.zip');
+# Commenting scommand download for CTLite
+# my $ua = LWP::UserAgent->new ;
+# $ua->mirror($soastaUrl . '/downloads/scommand/scommand.zip', 'scommand.zip');
 
-if ( $^O == 'darwin' )
-{
-    ## MAC ##
-    print("Detected MAC | Linix based operating system\n") ;
-    system("unzip -o scommand.zip") ;
-    system("chmod +x ./scommand/bin/scommand") ;
-    ##
-    ## TODO: Need to make sure this stuff was successful.
-    ##
-}
-else
-{
-    print "error: could not decompress tools for OS = " . $^O . "\n" ;
-    exit ( 1 ) ;
-}
+# if ( $^O == 'darwin' )
+# {
+#     ## MAC ##
+#     print("Detected MAC | Linix based operating system\n") ;
+#     system("unzip -o scommand.zip") ;
+#     system("chmod +x ./scommand/bin/scommand") ;
+#     ##
+#     ## TODO: Need to make sure this stuff was successful.
+#     ##
+# }
+# else
+# {
+#     print "error: could not decompress tools for OS = " . $^O . "\n" ;
+#     exit ( 1 ) ;
+# }
 
 
 #STEP 2: Run the loadtest composition
