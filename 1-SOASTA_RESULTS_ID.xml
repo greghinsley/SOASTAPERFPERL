@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite errors="0" failures="0" hostname="OSTLT0178779" name="Compositions.COMP_LAKITU" tests="1" time="84.756" timestamp="2014-05-30T14:41:45.309+01:00" url="http://10.65.84.83/concerto">
+  <testcase classname="Compositions" name="COMP_LAKITU" resultID="9" time="84.756" />
+</testsuite>
